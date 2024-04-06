@@ -70,6 +70,11 @@
     "style": {
       "navigationBarTitleText": "浏览文本"
     }
+  }, {
+    "path": "pages/stock/instock",
+    "style": {
+      "navigationBarTitleText": "入库（数量）"
+    }
   }],
   "tabBar": {
     "color": "#000000",
@@ -85,7 +90,12 @@
         "pagePath": "pages/work/index",
         "iconPath": "static/images/tabbar/work.png",
         "selectedIconPath": "static/images/tabbar/work_.png",
-        "text": "工作台"
+        "text": "消息通知"
+      }, {
+      "pagePath": "pages/work/index",
+      "iconPath": "static/images/tabbar/work.png",
+      "selectedIconPath": "static/images/tabbar/work_.png",
+      "text": "工作台"
       }, {
         "pagePath": "pages/mine/index",
         "iconPath": "static/images/tabbar/mine.png",
