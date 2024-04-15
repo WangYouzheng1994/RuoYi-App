@@ -3,27 +3,26 @@
     <!-- 宫格组件 -->
     <uni-section title="入库操作" type="line"></uni-section>
     <view class="grid-body">
-      <uni-grid :column="4" :showBorder="false" @change="changeGrid">
+      <uni-grid :column="4" :showBorder="false" >
         <uni-grid-item>
-          <view class="grid-item-box">
+          <view class="grid-item-box" @click="changeGrid('/pages/stock/instock')">
             <uni-icons type="person-filled" size="30"></uni-icons>
             <text class="text">货物入库</text>
           </view>
         </uni-grid-item>
       </uni-grid>
-
     </view>
     <uni-section title="备货操作" type="line"></uni-section>
     <view class="grid-body">
-      <uni-grid :column="4" :showBorder="false" @change="changeGrid">
+      <uni-grid :column="4" :showBorder="false">
         <uni-grid-item>
-          <view class="grid-item-box">
+          <view class="grid-item-box" @click="changeGrid('/pages/picking/picking-work')">
             <uni-icons type="staff-filled" size="30"></uni-icons>
             <text class="text">备货作业</text>
           </view>
-          </uni-grid-item>
+        </uni-grid-item>
 
-          <uni-grid-item>
+        <uni-grid-item>
           <view class="grid-item-box">
             <uni-icons type="staff-filled" size="30"></uni-icons>
             <text class="text">备货回退作业</text>
@@ -67,7 +66,7 @@
         </uni-grid-item>
       </uni-grid>
     </view>
-
+    <!--https://juejin.cn/post/7201332537338134584-->
     <uni-section title="盘点操作" type="line"></uni-section>
     <view class="grid-body">
       <uni-grid :column="4" :showBorder="false" @change="changeGrid">
@@ -107,9 +106,12 @@ export default {
     changeSwiper(e) {
       this.current = e.detail.current
     },
-    changeGrid(e) {
-      this.$tab.navigateTo('/pages/stock/instock')
-      this.$modal.showToast('模块建设中~')
+    changeGrid(a, e) {
+      if (!a) {
+        this.$modal.showToast('模块建设中~')
+        return;
+      }
+      this.$tab.navigateTo(a)
     }
   }
 }
@@ -152,8 +154,7 @@ view {
 
 .uni-margin-wrap {
   width: 690rpx;
-  width: 100%;
-;
+  width: 100%;;
 }
 
 .swiper {

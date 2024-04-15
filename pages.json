@@ -12,7 +12,7 @@
   }, {
     "path": "pages/index",
     "style": {
-      "navigationBarTitleText": "若依移动端框架",
+      "navigationBarTitleText": "WMS移动端",
       "navigationStyle": "custom"
     }
   }, {
@@ -73,7 +73,12 @@
   }, {
     "path": "pages/stock/instock",
     "style": {
-      "navigationBarTitleText": "入库（数量）"
+      "navigationBarTitleText": "货物入库"
+    }
+  }, {
+    "path": "pages/picking/picking-work",
+    "style": {
+      "navigationBarTitleText": "备货作业"
     }
   }],
   "tabBar": {
@@ -86,11 +91,6 @@
         "iconPath": "static/images/tabbar/home.png",
         "selectedIconPath": "static/images/tabbar/home_.png",
         "text": "首页"
-      }, {
-        "pagePath": "pages/work/index",
-        "iconPath": "static/images/tabbar/work.png",
-        "selectedIconPath": "static/images/tabbar/work_.png",
-        "text": "消息通知"
       }, {
       "pagePath": "pages/work/index",
       "iconPath": "static/images/tabbar/work.png",
