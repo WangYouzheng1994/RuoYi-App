@@ -88,3 +88,10 @@
       }
     }
   }
+
+//  覆盖默认的蓝色
+
+.bg-blue {
+  background-color: rgb(66,80,191);
+  color: #ffffff;
+}
