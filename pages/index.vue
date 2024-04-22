@@ -16,7 +16,7 @@
     <view class="grid-body">
       <uni-grid :column="4" :showBorder="false">
         <uni-grid-item>
-          <view class="grid-item-box" @click="changeGrid('/pages/picking/picking-work')">
+          <view class="grid-item-box" @click="changeGrid('/pages/picking/picking-work-list')">
             <uni-icons type="staff-filled" size="30"></uni-icons>
             <text class="text">备货作业</text>
           </view>

@@ -76,6 +76,11 @@
       "navigationBarTitleText": "货物入库"
     }
   }, {
+    "path": "pages/picking/picking-work-list",
+    "style": {
+      "navigationBarTitleText": "备货作业清单"
+    }
+  }, {
     "path": "pages/picking/picking-work",
     "style": {
       "navigationBarTitleText": "备货作业"
